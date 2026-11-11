@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contoh halaman Kartu Rencana Studi untuk simulasi aplikasi Digital Kampus.">
+  <title>Kartu Rencana Studi | Digital Kampus</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Digital Kampus beranda">
+        <span class="brand-mark" aria-hidden="true">DK</span>
+        <span><strong>Digital Kampus</strong><small>Layanan Akademik</small></span>
+      </a>
+      <span class="demo-label">SIMULASI / DATA CONTOH</span>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">AKADEMIK / RENCANA STUDI</p>
+        <h1>Kartu Rencana Studi</h1>
+        <p class="intro">Periksa mata kuliah yang dipilih dan cetak ringkasan KRS untuk arsip pribadi.</p>
+      </div>
+      <button class="button button-primary no-print" id="print-krs" type="button">
+        <span aria-hidden="true">⎙</span> Cetak KRS
+      </button>
+    </section>
+
+    <section class="notice" aria-label="Pemberitahuan data contoh">
+      <strong>Mode demonstrasi.</strong> Informasi mahasiswa dan mata kuliah di halaman ini bukan data akademik sebenarnya.
+    </section>
+
+    <section class="card student-card" aria-labelledby="student-title">
+      <div class="card-heading">
+        <div>
+          <p class="eyebrow">INFORMASI MAHASISWA</p>
+          <h2 id="student-title">Identitas Akademik</h2>
+        </div>
+        <span class="status-pill">Contoh KRS</span>
+      </div>
+      <div class="student-grid">
+        <div class="info-item"><span>Nama mahasiswa</span><strong>Mahasiswa Contoh</strong></div>
+        <div class="info-item"><span>Nomor Induk Mahasiswa</span><strong>230000001</strong></div>
+        <div class="info-item"><span>Program studi</span><strong>Teknik Informatika</strong></div>
+        <div class="info-item"><span>Fakultas</span><strong>Ilmu Komputer</strong></div>
+        <div class="info-item"><span>Semester</span><strong>5 (Lima)</strong></div>
+        <div class="info-item"><span>Tahun akademik</span><strong>2026/2027</strong></div>
+      </div>
+    </section>
+
+    <section class="card courses-card" aria-labelledby="courses-title">
+      <div class="card-heading">
+        <div>
+          <p class="eyebrow">DAFTAR MATA KULIAH</p>
+          <h2 id="courses-title">Mata Kuliah yang Dipilih</h2>
+        </div>
+        <span class="course-count">3 mata kuliah</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">No.</th><th scope="col">Kode</th><th scope="col">Mata Kuliah</th><th scope="col">Kelas</th><th scope="col" class="number">SKS</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>IF501</td><td>Cloud Computing</td><td>A</td><td class="number" data-sks="3">3</td></tr>
+            <tr><td>2</td><td>IF502</td><td>DevOps</td><td>A</td><td class="number" data-sks="3">3</td></tr>
+            <tr><td>3</td><td>IF503</td><td>Rekayasa Perangkat Lunak</td><td>B</td><td class="number" data-sks="3">3</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><th colspan="4" scope="row">Total SKS</th><th class="number" id="total-sks">9</th></tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="summary-row">
+        <div><span>Total mata kuliah</span><strong id="total-courses">3</strong></div>
+        <div><span>Total SKS</span><strong><span id="summary-sks">9</span> SKS</strong></div>
+      </div>
+    </section>
+
+    <section class="signature-grid" aria-label="Pengesahan">
+      <div><p>Mengetahui,</p><strong>Dosen Pembimbing Akademik</strong><div class="signature-space"></div><span>( ................................ )</span></div>
+      <div><p>Mahasiswa,</p><strong>Mahasiswa Contoh</strong><div class="signature-space"></div><span>( ................................ )</span></div>
+    </section>
+
+    <p class="generated-note" id="generated-date"></p>
+  </main>
+
+  <footer class="site-footer no-print">
+    <p>© 2026 Digital Kampus — Proyek simulasi Cloud Computing dan DevOps.</p>
+  </footer>
+</body>
+</html>
